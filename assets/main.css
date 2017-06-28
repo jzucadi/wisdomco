@@ -8,102 +8,118 @@
     opacity: 0
 }
 
-
-/* Fancy Input*/
-
-.input--jiro {
-    margin-top: 2em;
+.container {
+    max-width: 960px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.input__field--jiro {
-    padding: 0.85em 0.5em;
+.title {
+    display: block;
+    font-weight: 300;
+    font-size: 5em;
+    color: #35495e;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 55px;
+    color: #526488;
+    word-spacing: 5px;
+    padding-bottom: 35px;
+}
+
+.links {
+    padding-top: 15px;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 3em;
+    margin-top: 5em;
+}
+
+input {
+    font-size: 18px;
+    padding: 0.625em 0.625em 0.625em 0.3125em;
+    display: block;
     width: 100%;
-    background: transparent;
-    color: #DDE2E2;
-    opacity: 0;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+    border: none;
+    border-bottom: 1px solid #757575;
 }
 
-.input__label--jiro {
+input:focus {
+    outline: none;
+}
+
+
+/* LABEL ======================================= */
+
+label {
+    font-family: 'Arial';
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
     position: absolute;
-    left: 0;
-    padding: 0 0.85em;
-    width: 100%;
-    height: 100%;
-    text-align: left;
     pointer-events: none;
+    left: 0.3125em;
+    top: 0.625em;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
 }
 
-.input__label-content--jiro {
-    -webkit-transition: -webkit-transform 0.3s 0.3s;
-    transition: transform 0.3s 0.3s;
+
+/* active state */
+
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    left: -2px;
+    font-size: 14px;
+    color: #5264AE;
 }
 
-.input__label--jiro::before,
-.input__label--jiro::after {
+
+/* BOTTOM BARS ================================= */
+
+.bar {
+    position: relative;
+    display: block;
+}
+
+.bar:before,
+.bar:after {
     content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
 }
 
-.input__label--jiro::before {
-    border-top: 2px solid #6a7989;
-    -webkit-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
-    transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
+.bar:before {
+    left: 50%;
 }
 
-.input__label--jiro::after {
-    z-index: -1;
-    background: #6a7989;
-    -webkit-transform: scale3d(1, 0, 1);
-    transform: scale3d(1, 0, 1);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
+.bar:after {
+    right: 50%;
 }
 
-.input__field--jiro:focus,
-.input--filled .input__field--jiro {
-    opacity: 1;
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-}
 
-.input__field--jiro:focus+.input__label--jiro .input__label-content--jiro,
-.input--filled .input__label-content--jiro {
-    -webkit-transform: translate3d(0, -80%, 0);
-    transform: translate3d(0, -80%, 0);
-    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
+/* active state */
 
-.input__field--jiro:focus+.input__label--jiro::before,
-.input--filled .input__label--jiro::before {
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-}
-
-.input__field--jiro:focus+.input__label--jiro::before,
-.input--filled .input__label--jiro::before {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-.input__field--jiro:focus+.input__label--jiro::after,
-.input--filled .input__label--jiro::after {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50%;
 }
 
 
