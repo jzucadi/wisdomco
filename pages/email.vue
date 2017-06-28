@@ -13,10 +13,8 @@
       <span class="highlight"></span>
       <span class="bar"></span>
       <label>Email</label>
-    </div>
-       <nuxt-link class="navi" to="/">
-            back ->
-          </nuxt-link>
+      </div>
+      
       <nuxt-link class="navi" to="/location">
             next ->
           </nuxt-link>

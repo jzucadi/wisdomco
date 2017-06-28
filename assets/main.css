@@ -9,8 +9,8 @@
 }
 
 .container {
+    min-height: calc(80vh - 2.1em - 3em);
     max-width: 960px;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

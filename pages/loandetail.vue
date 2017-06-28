@@ -8,8 +8,11 @@
       <h2 class="subtitle">
        How will this property be used?
       </h2>
-       <nuxt-link class="navi" to="/">
+      <nuxt-link class="navi" to="/">
             back ->
+          </nuxt-link>
+      <nuxt-link class="navi" to="/propertyvalue">
+            next ->
           </nuxt-link>
 
     </div>

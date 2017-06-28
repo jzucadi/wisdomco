@@ -8,8 +8,11 @@
       <h2 class="subtitle">
        Please estimate the value of your property
       </h2>
-       <nuxt-link class="navi" to="/">
+      <nuxt-link class="navi" to="/">
             back ->
+          </nuxt-link>
+       <nuxt-link class="navi" to="/second">
+            next ->
           </nuxt-link>
 
     </div>

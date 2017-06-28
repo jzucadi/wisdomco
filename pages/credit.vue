@@ -8,8 +8,11 @@
       <h2 class="subtitle">
        Can you estimate your credit rating?
       </h2>
-       <nuxt-link class="navi" to="/">
+      <nuxt-link class="navi" to="/">
             back ->
+          </nuxt-link>
+      <nuxt-link class="navi" to="/submit">
+            next ->
           </nuxt-link>
 
     </div>
