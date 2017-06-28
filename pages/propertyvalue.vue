@@ -8,6 +8,8 @@
       <h2 class="subtitle">
        Please estimate the value of your property
       </h2>
+
+      <div id="flat-slider"></div>
       <nuxt-link class="navi" to="/">
             back ->
           </nuxt-link>
@@ -18,3 +20,5 @@
     </div>
   </section>
 </template>
+<style>
+</style>

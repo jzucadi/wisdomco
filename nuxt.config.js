@@ -17,12 +17,17 @@ module.exports = {
      ** Global CSS
      */
     css: ['~assets/main.css'],
-    /*
+
+    script: [{
+            src: 'https://code.jquery.com/jquery-3.1.1.slim.min.js'
+        }]
+        /*
   /*
     /*
      ** Customize the progress-bar color
      */
     loading: { color: '#2196f3' },
+
     /*
      ** Build configuration
      */

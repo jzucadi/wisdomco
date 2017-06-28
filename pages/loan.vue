@@ -73,7 +73,7 @@ input[type="radio"] + label::before {
 /* Checked */
 input[type="checkbox"]:checked + label,
 input[type="radio"]:checked + label {
-  padding-left: 25px;
+  padding-left: 30px;
   color: #fff;
 }
 input[type="checkbox"]:checked + label::before,
