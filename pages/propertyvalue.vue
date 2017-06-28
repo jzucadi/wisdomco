@@ -6,7 +6,7 @@
         
       </h1>
       <h2 class="subtitle">
-       What is your email address?
+       Please estimate the value of your property
       </h2>
        <nuxt-link class="navi" to="/">
             back ->

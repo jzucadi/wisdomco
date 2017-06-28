@@ -6,7 +6,7 @@
         
       </h1>
       <h2 class="subtitle">
-       What is your email address?
+       Can you estimate your credit rating?
       </h2>
        <nuxt-link class="navi" to="/">
             back ->

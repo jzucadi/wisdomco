@@ -6,7 +6,7 @@
         
       </h1>
       <h2 class="subtitle">
-       What is your email address?
+       Submit your information below and we will contact you shortly
       </h2>
        <nuxt-link class="navi" to="/">
             back ->

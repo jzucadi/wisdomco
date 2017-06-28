@@ -6,7 +6,7 @@
         
       </h1>
       <h2 class="subtitle">
-       What is your email address?
+       What type of property are you refinancing?
       </h2>
        <nuxt-link class="navi" to="/">
             back ->

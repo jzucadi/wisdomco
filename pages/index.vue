@@ -9,6 +9,35 @@
        Hello, what is your name?
       </h2>
 
+
+
+
+
+      <nuxt-link class="navi" to="/email">
+            next ->
+          </nuxt-link>
+      <nuxt-link class="navi" to="/location">
+            location ->
+          </nuxt-link>
+      <nuxt-link class="navi" to="/loan">
+            loan ->
+          </nuxt-link>
+      <nuxt-link class="navi" to="/loandetail">
+            loandetail ->
+          </nuxt-link>
+      <nuxt-link class="navi" to="/propertyvalue">
+            propertyvalue ->
+          </nuxt-link>
+      <nuxt-link class="navi" to="/second">
+            secondmortgage ->
+          </nuxt-link>
+      <nuxt-link class="navi" to="/credit">
+            credit ->
+          </nuxt-link>
+      <nuxt-link class="navi" to="/submit">
+            submit ->
+          </nuxt-link>
+
     </div>
   </section>
 </template>
@@ -36,7 +65,6 @@ export default {
 }
 .title
 {
-  font-family: "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
   font-size: 5em;
