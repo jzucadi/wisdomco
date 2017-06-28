@@ -3,6 +3,14 @@
     <nuxt/>
   </div>
 </template>
+<script>
+import MyLine from '~components/Line.vue'
+export default {
+  components: {
+    MyLine
+  }
+}
+</script>
 <style>
 html
 {
@@ -50,3 +58,4 @@ html
   background-color: #35495e;
 }
 </style>
+
